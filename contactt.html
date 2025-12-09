@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+
+<style>
+*{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#222;
+        }
+
+        header{
+            padding:15px 10%;
+            background:#111;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            font-size:28px;
+            color:#fff;
+            font-weight:700;
+        }
+        .logo span{
+            color:#ff3c3c;
+        }
+
+        nav a{
+            margin-left:20px;
+            color:#fff;
+            text-decoration:none;
+            font-size:16px;
+        }
+        nav a:hover{
+            color:#ff3c3c;
+        }
+
+/* CONTACT SECTION */
+.contact-section{
+    padding:60px 20px;
+    background:#e9e5e5;
+}
+
+.contact-section h2{
+    text-align:center;
+    font-size:38px;
+    letter-spacing:2px;
+    margin-bottom:40px;
+}
+
+/* FLEX BOX */
+.contact-container{
+    max-width:1000px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    justify-content:center;
+}
+
+/* LEFT SIDE – DETAILS */
+.contact-details{
+    background:#efe6e6;
+    padding:25px;
+    width:300px;
+    border-radius:12px;
+    border:2px solid #444;
+}
+
+.contact-details h3{
+    margin-bottom:15px;
+    font-size:24px;
+    text-align:center;
+}
+
+.contact-details p{
+    font-size:16px;
+    margin:10px 0;
+    line-height:1.5;
+}
+
+/* RIGHT SIDE – FORM */
+.contact-form{
+    background:#f4eaea;
+    padding:25px;
+    width:600px;
+    border-radius:12px;
+    border:2px solid #444;
+}
+
+/* INPUTS */
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    background:#333;
+    color:white;
+    font-size:16px;
+    border:2px solid #555;
+}
+
+input:focus, textarea:focus{
+    border-color:#00ffea;
+    outline:none;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:12px;
+    background:#00ffea;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#00c8ba;
+}
+</style>
+</head>
+
+<body>
+<header>
+        <div class="logo">Operation <span>Sindoor</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="mission.html">Mission</a>
+            <a href="team.html">Team</a>
+            <a href="gallary.html">Gallery</a>
+            <a href="contactt.html">Contact</a>
+        </nav>
+    </header>
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+    <h2>CONTACT US</h2>
+
+    <div class="contact-container">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+
+            <p><strong>Design by</strong><br> Ayushi Parmar & Krishna Maheswari</p>
+
+            <p><strong>Address:</strong><br>
+            Operation Sindoor HQ<br>
+            Ahmedabad, Gujarat, India</p>
+
+            <p><strong>Phone:</strong><br>
+            +91 1800 01 0118</p>
+
+            <p><strong>Email:</strong><br>
+            operationsindoor@gmail.com</p>
+
+            <p><strong>Working Hours:</strong><br>
+            Mon – Sat | 10:00 AM – 6:00 PM</p>
+
+            <p><strong>Follow Us:</strong><br>
+            Instagram: @operationsindoor<br>
+            Facebook: Operation Sindoor<br>
+            YouTube: Operation Sindoor Official</p>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
