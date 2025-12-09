@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+
+<style>
+ *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#222;
+        }
+
+        header{
+            padding:15px 10%;
+            background:#111;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            font-size:28px;
+            color:#fff;
+            font-weight:700;
+        }
+        .logo span{
+            color:#ff3c3c;
+        }
+
+        nav a{
+            margin-left:20px;
+            color:#fff;
+            text-decoration:none;
+            font-size:16px;
+        }
+        nav a:hover{
+            color:#ff3c3c;
+        }
+
+/* Gallery Section */
+.gallery-section{
+    padding:60px 20px;
+    text-align:center;
+    background:#bfacac;
+}
+
+.gallery-section h2{
+    font-size:38px;
+    margin-bottom:40px;
+    letter-spacing:2px;
+}
+
+/* Gallery Grid */
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+    padding:0 20px;
+}
+
+/* Gallery Images */
+.gallery-container img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    border:2px solid white;
+    transition:0.4s;
+}
+
+/* Hover Effect */
+.gallery-container img:hover{
+    transform:scale(1.08);
+    border-color:#00ffea;
+    box-shadow:0 0 15px #00ffea;
+}
+</style>
+</head>
+
+<body>
+<header>
+        <div class="logo">Operation <span>Sindoor</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="mission.html">Mission</a>
+            <a href="team.html">Team</a>
+            <a href="gallary.html">Gallery</a>
+            <a href="contactt.html">Contact</a>
+        </nav>
+    </header>
+<!-- GALLERY SECTION -->
+<section class="gallery-section">
+    <h2>GALLERY</h2>
+
+    <div class="gallery-container">
+        <img src="opp1.jpg">
+        <img src="opp2.jpg">
+        <img src="opp3.jpg">
+        <img src="opp4.jpg">
+        <img src="opp5.jpg">
+        <img src="opp6.jpg">
+    </div>
+</section>
+
+</body>
+</html>
