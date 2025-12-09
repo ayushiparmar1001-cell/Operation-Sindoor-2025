@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation Sindoor - Mission</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#222;
+        }
+
+        header{
+            padding:15px 10%;
+            background:#111;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            font-size:28px;
+            color:#fff;
+            font-weight:700;
+        }
+        .logo span{
+            color:#ff3c3c;
+        }
+
+        nav a{
+            margin-left:20px;
+            color:#fff;
+            text-decoration:none;
+            font-size:16px;
+        }
+        nav a:hover{
+            color:#ff3c3c;
+        }
+
+        /* Animation Base */
+        .animate{
+            opacity:0;
+            transform:translateY(40px);
+            transition: all 0.8s ease;
+        }
+        .show{
+            opacity:1;
+            transform:translateY(0);
+        }
+
+        /* Mission Section */
+        .mission-section{
+            padding:50px 10%;
+            background:white;
+            text-align:center;
+        }
+        .mission-section h1{
+            font-size:40px;
+            color:#ff3c3c;
+            margin-bottom:20px;
+        }
+        .mission-section p{
+            font-size:18px;
+            line-height:1.7;
+        }
+
+        /* Cards */
+        .cards{
+            margin-top:40px;
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+            gap:20px;
+        }
+        .card{
+            background:#fff;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+            transition:transform 0.4s ease;
+        }
+        .card:hover{
+            transform:translateY(-10px);
+        }
+        .card h3{
+            font-size:22px;
+            margin-bottom:10px;
+            color:#ff3c3c;
+        }
+        .card p{
+            font-size:16px;
+            line-height:1.6;
+        }
+
+        .mission-list{
+            max-width:800px;
+            margin:40px auto;
+            text-align:left;
+        }
+        .mission-list li{
+            margin-bottom:12px;
+            font-size:18px;
+        }
+
+        .btn{
+            margin-top:30px;
+            padding:12px 25px;
+            background:#ff3c3c;
+            color:white;
+            text-decoration:none;
+            border-radius:6px;
+            cursor:pointer;
+            font-size:18px;
+        }
+        .btn:hover{
+            background:#cc0000;
+        }
+
+        footer{
+            margin-top:40px;
+            background:#111;
+            padding:15px;
+            color:white;
+            text-align:center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Operation <span>Sindoor</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="mission.html">Mission</a>
+            <a href="team.html">Team</a>
+            <a href="gallary.html">Gallery</a>
+            <a href="contactt.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+
+        <h1 class="animate">Our Mission</h1>
+
+        <p class="animate">
+            Operation Sindoor stands for courage, discipline, and national unity.
+            हमारा उद्देश्य युवाओं में देशभक्ति और सुरक्षा की भावना को मजबूत करना है।
+        </p>
+
+        <p class="animate" style="margin-top:15px;">
+            We work for peace, safety, and a stronger India — inspired by our brave warriors.
+        </p>
+
+        <!-- Cards -->
+        <div class="cards">
+            <div class="card animate">
+                <h3>Nation First</h3>
+                <p>हर निर्णय, हर कदम — देश की सुरक्षा और सम्मान के लिए समर्पित।</p>
+            </div>
+
+            <div class="card animate">
+                <h3>Strength & Unity</h3>
+                <p>United force is our true power. Together we face every challenge.</p>
+            </div>
+
+            <div class="card animate">
+                <h3>Youth Empowerment</h3>
+                <p>युवाओं को motivate करना और उन्हें रक्षा और जिम्मेदारी के लिए तैयार करना।</p>
+            </div>
+        </div>
+
+        <!-- List -->
+        <h2 class="animate" style="margin-top:40px;">Key Mission Goals:</h2>
+
+        <ul class="mission-list animate">
+            <li>✔ Peace और national safety को मजबूत बनाना।</li>
+            <li>✔ Emergency situation में quick response देना।</li>
+            <li>✔ Unity, discipline और respect को बढ़ावा देना।</li>
+            <li>✔ Youth को देशभक्ति की ओर inspire करना।</li>
+            <li>✔ Technology और strategy में लगातार सुधार।</li>
+        </ul>
+
+        <button class="btn animate" onclick="showMission()">Explore More</button>
+
+    </section>
+
+    <footer>
+        © 2025 Operation Sindoor — Nation First 🇮🇳
+    </footer>
+
+    <!-- ANIMATION JS -->
+    <script>
+        const elements = document.querySelectorAll('.animate');
+
+        function showOnScroll(){
+            elements.forEach(el=>{
+                const rect = el.getBoundingClientRect().top;
+                if(rect < window.innerHeight - 100){
+                    el.classList.add('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', showOnScroll);
+        window.addEventListener('load', showOnScroll);
+
+        function showMission(){
+            alert("Operation Sindoor: Moving with Courage & Unity!");
+        }
+    </script>
+
+</body>
+</html>
